@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Books for Kids",
+    "image": "https://i.ibb.co/LgJK7zw/Education.png",
+    "category": "Education",
+    "card_bg": "#FF444A26",
+    "category_bg": "#FF444E33",
+    "text_color": "#FF444A",
+    "description": "Provide underprivileged children with access to quality educational resources by donating books. Your contribution will ignite a love for learning and empower these young minds for a brighter future.",
+    "price": 250
+  },
+  {
+    "id": 2,
+    "title": "Emergency Relief",
+    "image": "https://i.ibb.co/k1Ld54n/Food.png",
+    "category": "Flood",
+    "card_bg": "#F871475F",
+    "category_bg": "#F87147CC",
+    "text_color": "#F87147",
+    "description": "Support families affected by floods with essential relief supplies like food, clean water, and shelter. Your donation will bring comfort and hope during times of crisis.",
+    "price": 300
+  },
+  {
+    "id": 3,
+    "title": "Medical Outreach",
+    "image": "https://i.ibb.co/r5bbM0V/Health.png",
+    "category": "Health",
+    "card_bg": "#0052FF26",
+    "category_bg": "#0052FF33",
+    "text_color": "#0052FF",
+    "description": "Contribute to medical outreach programs providing healthcare to underserved communities. Your donation will make a significant impact on improving the health and well-being of those in need.",
+    "price": 275
+  },
+  {
+    "id": 4,
+    "title": "Warm Winter Clothes",
+    "image": "https://i.ibb.co/mTmVpzw/Clothing.png",
+    "category": "Clothing",
+    "card_bg": "#79C23F26",
+    "category_bg": "#79C23F33",
+    "text_color": "#79C23F",
+    "description": "Help keep families warm during winter by providing them with quality clothing. Your generosity will bring comfort and relief to those facing the cold without proper attire.",
+    "price": 225
+  },
+  {
+    "id": 5,
+    "title": "Scholarship Program",
+    "image": "https://i.ibb.co/pLyv78j/Optimized-Whats-App-Image-2020-06-28-at-18-29-04-1.jpg",
+    "category": "Education",
+    "card_bg": "#FF444A26",
+    "category_bg": "#FF444E33",
+    "text_color": "#FF444A",
+    "description": "Support deserving students with a scholarship program to pursue their dreams. Your donation will open doors to higher education and empower the next generation.",
+    "price": 350
+  },
+  {
+    "id": 6,
+    "title": "Clean Water Initiative",
+    "image": "https://i.ibb.co/1GCbQ29/Optimized-download-3.jpg",
+    "category": "Health",
+    "card_bg": "#0052FF26",
+    "category_bg": "#0052FF33",
+    "text_color": "#0052FF",
+    "description": "Provide communities in need with access to clean and safe drinking water. Your donation will have a profound impact on the health and well-being of families.",
+    "price": 275
+  },
+  {
+    "id": 7,
+    "title": "Community Shelter",
+    "image": "https://i.ibb.co/zGzNYND/Optimized-92b5a98b79add5558d5e83cc091f98b7-5d374959a41f5.jpg",
+    "category": "Flood",
+    "card_bg": "#F871475F",
+    "category_bg": "#F87147CC",
+    "text_color": "#F87147",
+    "description": "Help provide emergency shelters to families affected by natural disasters. Your contribution will offer safety and a sense of security during times of crisis.",
+    "price": 325
+  },
+  {
+    "id": 8,
+    "title": "Nutrition Support",
+    "image": "https://i.ibb.co/BnqmSn9/Optimized-medical-interventions-1.jpg",
+    "category": "Health",
+    "card_bg": "#0052FF26",
+    "category_bg": "#0052FF33",
+    "text_color": "#0052FF",
+    "description": "Support a nutrition program ensuring children receive essential nutrients for healthy growth. Your donation will play a crucial role in nourishing young lives.",
+    "price": 275
+  },
+  {
+    "id": 9,
+    "title": "Skills Training",
+    "image": "https://i.ibb.co/YhJJFx0/Optimized-download-2.jpg",
+    "category": "Education",
+    "card_bg": "#FF444A26",
+    "category_bg": "#FF444E33",
+    "text_color": "#FF444A",
+    "description": "Empower individuals with the skills and training they need to secure stable employment. Your donation will have a lasting impact on their lives and communities.",
+    "price": 300
+  },
+  {
+    "id": 10,
+    "title": "Women's Empowerment",
+    "image": "https://i.ibb.co/gW4yVty/Optimized-download.jpg",
+    "category": "Education",
+    "card_bg": "#FF444A26",
+    "category_bg": "#FF444E33",
+    "text_color": "#FF444A",
+    "description": "Support programs empowering women with education, skills, and resources. Your donation will contribute to gender equality and positive societal change.",
+    "price": 375
+  },
+  {
+    "id": 11,
+    "title": "Disaster Preparedness",
+    "image": "https://i.ibb.co/Dtq1T7D/Optimized-di-Lizp-OI.jpg",
+    "category": "Flood",
+    "card_bg": "#F871475F",
+    "category_bg": "#F87147CC",
+    "text_color": "#F87147",
+    "description": "Help communities prepare for future disasters by providing training, resources, and support. Your donation will save lives and build resilience.",
+    "price": 325
+  },
+  {
+    "id": 12,
+    "title": "Clothing Drive",
+    "image": "https://i.ibb.co/884kPm7/Optimized-Gorkha-10.jpg",
+    "category": "Clothing",
+    "card_bg": "#79C23F26",
+    "category_bg": "#79C23F33",
+    "text_color": "#79C23F",
+    "description": "Contribute to a clothing drive providing gently used garments to those in need. Your donation will bring warmth and dignity to individuals and families.",
+    "price": 250
+  }
+]
