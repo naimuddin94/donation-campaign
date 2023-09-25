@@ -6,10 +6,16 @@ const NavLi = ({ path, children }) => {
     <NavLink
       to={path}
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-red-600 underline" : ""
+        isPending
+          ? "pending"
+          : isActive
+          ? "text-red-600 underline underline-offset-2 font-semibold"
+          : ""
       }
     >
-      <li className="hover:bg-slate-300 duration-200 px-4 py-1 rounded-md">{children}</li>
+      <li className="hover:bg-slate-300 duration-200 px-4 py-1 rounded-md">
+        {children}
+      </li>
     </NavLink>
   );
 };

@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { savedDonatioData } from "../../utility/LocalStorage";
 
 const DonationDetails = () => {
   const donationsJSON = useLoaderData();
@@ -10,8 +11,8 @@ const DonationDetails = () => {
 
   const { id, image, title, price, text_color, description } = donation;
 
-  const handleDonate = () => {
-    console.log("donation ok");
+  const handleDonate = (id) => {
+    savedDonatioData(id);
   };
 
   return (
@@ -20,7 +21,7 @@ const DonationDetails = () => {
         <img src={image} alt="" className="w-full h-full" />
         <div className="absolute w-full bottom-0 py-4 px-8 bg-black/50">
           <button
-            onClick={handleDonate}
+            onClick={() => handleDonate(id)}
             className="px-6 py-2 rounded-md text-white font-medium btn"
             style={{ backgroundColor: text_color }}
           >

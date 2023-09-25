@@ -10,7 +10,7 @@ const Navbar = () => {
           className="w-48"
         />
       </div>
-      <ul className="flex gap-6 font-semibold">
+      <ul className="flex gap-6 font-medium">
         <NavLi path="/">Home</NavLi>
         <NavLi path="/donation">Donation</NavLi>
         <NavLi path="/statistics">Statistics</NavLi>
