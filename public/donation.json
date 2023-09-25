@@ -15,8 +15,8 @@
     "title": "Emergency Relief",
     "image": "https://i.ibb.co/k1Ld54n/Food.png",
     "category": "Flood",
-    "card_bg": "#F871475F",
-    "category_bg": "#F87147CC",
+    "card_bg": "#f8714726",
+    "category_bg": "#f8714733",
     "text_color": "#F87147",
     "description": "Support families affected by floods with essential relief supplies like food, clean water, and shelter. Your donation will bring comfort and hope during times of crisis.",
     "price": 300
@@ -70,8 +70,8 @@
     "title": "Community Shelter",
     "image": "https://i.ibb.co/zGzNYND/Optimized-92b5a98b79add5558d5e83cc091f98b7-5d374959a41f5.jpg",
     "category": "Flood",
-    "card_bg": "#F871475F",
-    "category_bg": "#F87147CC",
+    "card_bg": "#f8714726",
+    "category_bg": "#f8714733",
     "text_color": "#F87147",
     "description": "Help provide emergency shelters to families affected by natural disasters. Your contribution will offer safety and a sense of security during times of crisis.",
     "price": 325
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "title": "Women's Empowerment",
-    "image": "https://i.ibb.co/gW4yVty/Optimized-download.jpg",
+    "image": "https://i.ibb.co/R3603ch/Optimized-download-4.jpg",
     "category": "Education",
     "card_bg": "#FF444A26",
     "category_bg": "#FF444E33",
@@ -114,8 +114,8 @@
     "title": "Disaster Preparedness",
     "image": "https://i.ibb.co/Dtq1T7D/Optimized-di-Lizp-OI.jpg",
     "category": "Flood",
-    "card_bg": "#F871475F",
-    "category_bg": "#F87147CC",
+    "card_bg": "#f8714726",
+    "category_bg": "#f8714733",
     "text_color": "#F87147",
     "description": "Help communities prepare for future disasters by providing training, resources, and support. Your donation will save lives and build resilience.",
     "price": 325
