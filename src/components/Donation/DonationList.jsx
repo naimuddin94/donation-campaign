@@ -3,10 +3,11 @@ import DonationCard from "./DonationCard";
 
 const DonationList = ({ donations }) => {
   return (
-    <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10 px-9">
-      {donations?.map((donation) => (
-        <DonationCard key={donation.id} donation={donation} />
-      ))}
+    <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10">
+      {donations &&
+        donations.map((donation) => (
+          <DonationCard key={donation.id} donation={donation} />
+        ))}
     </div>
   );
 };

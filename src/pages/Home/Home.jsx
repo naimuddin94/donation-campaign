@@ -3,7 +3,8 @@ import DonationList from "../../components/Donation/DonationList";
 import Header from "../../components/Header/Header";
 
 const Home = () => {
-  const donations = useLoaderData();
+  const donationsJSON = useLoaderData();
+  const donations = JSON.parse(donationsJSON);
   return (
     <>
       <Header />

@@ -1,11 +1,14 @@
-import { NavLink } from "react-router-dom";
 import NavLi from "../UtilityComponent/NavLi";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-12 text-slate-600 z-20">
+    <nav className="flex justify-between items-center pt-12 text-slate-600 z-20">
       <div>
-        <img src="./image/Logo.png" alt="logo image" className="w-48" />
+        <img
+          src="https://i.ibb.co/Yj5PDG1/Logo.png"
+          alt="logo image"
+          className="w-48"
+        />
       </div>
       <ul className="flex gap-6 font-semibold">
         <NavLi path="/">Home</NavLi>

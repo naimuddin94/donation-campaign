@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import Home from "../pages/Home/Home";
 import Donation from "../pages/Donation/Donation";
 import Statistics from "../pages/Statistics/Statistics";
+import DonationDetails from "../pages/DonationDetails/DonationDetails";
 
 const myCreateRouter = createBrowserRouter([
   {
@@ -12,7 +13,10 @@ const myCreateRouter = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("./donation.json"),
+        loader: () =>
+          fetch(
+            "https://raw.githubusercontent.com/naimuddin94/donation-fake-data/main/donation.json"
+          ),
       },
       {
         path: "/donation",
@@ -21,6 +25,14 @@ const myCreateRouter = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/donations/:donationId",
+        element: <DonationDetails />,
+        loader: () =>
+          fetch(
+            "https://raw.githubusercontent.com/naimuddin94/donation-fake-data/main/donation.json"
+          ),
       },
     ],
   },
