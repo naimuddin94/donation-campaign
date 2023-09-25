@@ -29,6 +29,10 @@ const myCreateRouter = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+        loader: () =>
+          fetch(
+            "https://raw.githubusercontent.com/naimuddin94/donation-fake-data/main/donation.json"
+          ),
       },
       {
         path: "/donations/:donationId",

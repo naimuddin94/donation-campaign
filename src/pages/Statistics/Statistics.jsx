@@ -1,7 +1,33 @@
+import { useLoaderData } from "react-router-dom";
+import Chart from "react-apexcharts";
+import { getDonationToLS } from "../../utility/LocalStorage";
+
 const Statistics = () => {
+  const donationsJSON = useLoaderData();
+  const donations = JSON.parse(donationsJSON);
+
+  const savedDonatioLS = getDonationToLS();
+  const donatedList = donations.filter((donation) =>
+    savedDonatioLS.includes(donation.id)
+  );
+
+  const totalAmount = donations.reduce((acc, cur) => acc + cur.price, 0);
+  const donatedAmount = donatedList.reduce((acc, cur) => acc + cur.price, 0);
+
+  const amountArray = [donatedAmount, totalAmount];
+
   return (
-    <div>
-      <h1>Statistics page are here</h1>
+    <div className="py-8">
+      <Chart
+        type="pie"
+        width={1000}
+        height={350}
+        series={amountArray}
+        options={{
+          labels: ["Your Donation", "Total Donation"],
+          colors: ["#00C49F", "#FF444A"],
+        }}
+      ></Chart>
     </div>
   );
 };
