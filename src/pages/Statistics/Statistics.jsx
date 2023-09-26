@@ -17,11 +17,9 @@ const Statistics = () => {
   const amountArray = [donatedAmount, totalAmount];
 
   return (
-    <div className="py-8">
+    <div className="py-8 w-full max-w-[500px] h-auto mx-auto">
       <Chart
         type="pie"
-        width={1000}
-        height={350}
         series={amountArray}
         options={{
           labels: ["Your Donation", "Total Donation"],
