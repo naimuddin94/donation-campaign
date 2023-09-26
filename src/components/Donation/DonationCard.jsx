@@ -15,7 +15,7 @@ const DonationCard = ({ donation }) => {
           />
         </div>
         <div
-          className="h-24 p-5 space-y-1"
+          className="h-28 p-5 space-y-1"
           style={{ backgroundColor: card_bg }}
         >
           <h3
