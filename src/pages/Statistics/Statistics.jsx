@@ -7,20 +7,14 @@ const Statistics = () => {
   const donations = JSON.parse(donationsJSON);
 
   const savedDonatioLS = getDonationToLS();
-  const donatedList = donations.filter((donation) =>
-    savedDonatioLS.includes(donation.id)
-  );
 
-  const totalAmount = donations.reduce((acc, cur) => acc + cur.price, 0);
-  const donatedAmount = donatedList.reduce((acc, cur) => acc + cur.price, 0);
-
-  const amountArray = [donatedAmount, totalAmount];
+  const average = [savedDonatioLS.length, donations.length];
 
   return (
     <div className="py-8 w-full max-w-[500px] h-auto mx-auto">
       <Chart
         type="pie"
-        series={amountArray}
+        series={average}
         options={{
           labels: ["Your Donation", "Total Donation"],
           colors: ["#00C49F", "#FF444A"],

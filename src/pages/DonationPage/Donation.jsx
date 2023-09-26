@@ -21,7 +21,7 @@ const Donation = () => {
     <div>
       <div
         className={
-          storedDonation.length <= 0
+          storedDonation.length === 0
             ? "h-[70vh] flex items-center justify-center"
             : "hidden"
         }
