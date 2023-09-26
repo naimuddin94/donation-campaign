@@ -30,7 +30,7 @@ const Donation = () => {
           No donation found
         </h1>
       </div>
-      <div className="grid gap-5 grid-cols-2 w-4/5 mx-auto py-8">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 px-5 lg:px-12 py-8">
         {storedDonation &&
           storedDonation
             .slice(0, dataLength)

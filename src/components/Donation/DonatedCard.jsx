@@ -14,27 +14,29 @@ const DonatedCard = ({ donation }) => {
   } = donation;
 
   return (
-    <div className="flex rounded-md overflow-hidden h-40">
-      <div className="w-3/5">
-        <img src={image} alt={category + " image"} className="h-full" />
+    <div className="relative flex w-full max-w-[48rem] flex-row rounded-lg bg-white bg-clip-border text-gray-600">
+      <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-lg rounded-r-none bg-white bg-clip-border text-gray-700">
+        <img src={image} className="h-full w-full object-cover" />
       </div>
       <div
-        className="p-5 w-full space-y-1"
+        className="p-6 w-full rounded-r-lg flex gap-1 flex-col justify-between"
         style={{ backgroundColor: card_bg }}
       >
-        <h3
-          className="text-xs w-fit px-3 py-1 rounded-md font-medium"
+        <h6
+          className="w-fit px-4 py-1 text-sm rounded-md"
           style={{ backgroundColor: category_bg, color: text_color }}
         >
           {category}
-        </h3>
-        <h2 className="text-slate-600 text-lg font-semibold">{title}</h2>
-        <h3 className="font-medium" style={{ color: text_color }}>
-          ${price.toFixed(2)}
-        </h3>
-        <Link to={`/donations/${id}`}>
+        </h6>
+        <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+          {title}
+        </h4>
+        <p className="font-medium" style={{ color: text_color }}>
+          ${price}
+        </p>
+        <Link className="inline-block" to={`/donations/${id}`}>
           <button
-            className="px-4 py-2 rounded-md text-sm text-white font-medium btn"
+            className="btn btn-active text-white text-xs"
             style={{ backgroundColor: text_color }}
           >
             View Details
