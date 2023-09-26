@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { savedDonatioData } from "../../utility/LocalStorage";
+import { getDonationToLS, savedDonatioData } from "../../utility/LocalStorage";
+import { toast } from "react-toastify";
 
 const DonationDetails = () => {
   const donationsJSON = useLoaderData();
@@ -12,6 +13,11 @@ const DonationDetails = () => {
   const { id, image, title, price, text_color, description } = donation;
 
   const handleDonate = (id) => {
+    const storedDonation = getDonationToLS();
+    const isStored = storedDonation.includes(id);
+    console.log(isStored);
+    if (isStored) return toast.error("You all ready donate for");
+    toast.success("Donation successfully done");
     savedDonatioData(id);
   };
 
