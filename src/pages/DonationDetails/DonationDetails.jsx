@@ -16,13 +16,13 @@ const DonationDetails = () => {
   };
 
   return (
-    <section className="py-10 w-3/4 mx-auto">
-      <div className="h-[450px] relative rounded-lg overflow-hidden">
+    <section className="py-10 w-10/12 mx-auto">
+      <div className="md:h-[450px] relative rounded-lg overflow-hidden">
         <img src={image} alt="" className="w-full h-full" />
-        <div className="absolute w-full bottom-0 py-4 px-8 bg-black/50">
+        <div className="absolute w-full bottom-0 py-2 px-4 md:py-4 md:px-8 bg-black/50">
           <button
             onClick={() => handleDonate(id)}
-            className="px-6 py-2 rounded-md text-white font-medium btn"
+            className="btn btn-sm md:btn-md btn-active border-none text-white normal-case"
             style={{ backgroundColor: text_color }}
           >
             Donate ${price}
