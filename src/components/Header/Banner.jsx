@@ -10,7 +10,7 @@ const Banner = () => {
           placeholder="Search here..."
           className="w-full px-4 focus:outline-0 border border-slate-300 border-r-0 rounded-s-md"
         />
-        <button className="btn bg-[#FF444A] px-5 text-white font-medium">
+        <button className="hover:brightness-75 duration-200 cursor-pointer px-4 text-white font-medium bg-[#FF444A]">
           Search
         </button>
       </div>

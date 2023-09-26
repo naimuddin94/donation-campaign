@@ -10,8 +10,3 @@
   }
 }
 
-@layer components {
-  .btn {
-    @apply hover:brightness-75 duration-200 cursor-pointer;
-  }
-}
