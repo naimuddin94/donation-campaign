@@ -7,8 +7,9 @@ const Statistics = () => {
   const donations = JSON.parse(donationsJSON);
 
   const savedDonatioLS = getDonationToLS();
+  const remainDonation = donations.length - savedDonatioLS.length;
 
-  const average = [savedDonatioLS.length, donations.length];
+  const average = [savedDonatioLS.length, remainDonation];
 
   return (
     <div className="py-8 w-full max-w-[500px] h-auto mx-auto">

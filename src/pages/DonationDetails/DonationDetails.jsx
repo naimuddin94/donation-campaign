@@ -15,7 +15,6 @@ const DonationDetails = () => {
   const handleDonate = (id) => {
     const storedDonation = getDonationToLS();
     const isStored = storedDonation.includes(id);
-    console.log(isStored);
     if (isStored) return toast.error("You all ready donate for");
     toast.success("Donation successfully done");
     savedDonatioData(id);

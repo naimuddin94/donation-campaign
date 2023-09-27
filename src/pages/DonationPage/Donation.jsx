@@ -19,17 +19,13 @@ const Donation = () => {
 
   return (
     <div>
-      <div
-        className={
-          storedDonation.length === 0
-            ? "h-[70vh] flex items-center justify-center"
-            : "hidden"
-        }
-      >
-        <h1 className="text-lg font-medium text-slate-700">
-          No donation found
-        </h1>
-      </div>
+      {storedDonation.length === 0 ? (
+        <div className="h-[70vh] flex items-center justify-center">
+          <h1 className="text-lg font-medium text-slate-700">
+            No donation found
+          </h1>
+        </div>
+      ) : null}
       <div className="grid gap-5 grid-cols-1 md:grid-cols-2 px-5 lg:px-12 py-8">
         {storedDonation &&
           storedDonation
