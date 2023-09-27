@@ -1,8 +1,10 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { getDonationToLS, savedDonatioData } from "../../utility/LocalStorage";
 import { toast } from "react-toastify";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const DonationDetails = () => {
+  const navigate = useNavigate();
   const donationsJSON = useLoaderData();
   const donations = JSON.parse(donationsJSON);
   const { donationId } = useParams();
@@ -37,6 +39,12 @@ const DonationDetails = () => {
       <div className="my-5">
         <h1 className="text-2xl font-bold py-3">{title}</h1>
         <p>{description}</p>
+      </div>
+      <div>
+        <button onClick={() => navigate("/")} className="btn btn-outline">
+          <AiOutlineArrowLeft className="text-lg" />
+          Go back
+        </button>
       </div>
     </section>
   );
