@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { TbError404 } from "react-icons/tb";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ const NotFound = () => {
       <p>Sorry, an unexpected error has occurred.</p>
 
       <button onClick={() => navigate("/")} className="btn btn-outline">
+        <AiOutlineArrowLeft className="text-lg" />
         Go back
       </button>
     </div>

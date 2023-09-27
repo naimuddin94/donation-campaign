@@ -13,7 +13,7 @@ const NavLi = ({ path, children }) => {
           : ""
       }
     >
-      <li className="hover:bg-slate-300 duration-200 px-4 py-1 rounded-md">
+      <li className="hover:bg-slate-300 duration-200 px-4 py-2 rounded-md">
         {children}
       </li>
     </NavLink>
